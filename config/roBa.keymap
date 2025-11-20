@@ -73,6 +73,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
     };
 
     keymap {
@@ -82,8 +92,8 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R      &kp T                                          &kp Y      &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F      &kp G     &kp RIGHT_ARROW      &kp UP_ARROW    &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B     &kp LEFT_ARROW       &kp DOWN_ARROW  &kp N      &kp M  &kp COMMA  &kp DOT  &kp ENTER
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mkp MB1  &mkp MB2             &mo 2           &kp SPACE                             &kp ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B     &kp LEFT_ARROW       &kp DOWN_ARROW  &kp N      &kp M  &kp COMMA  &kp DOT  &ht ENTER INT_KATAKANAHIRAGANA
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mkp MB1  &mkp MB2             &mo 2           &kp SPACE                             &ht LANGUAGE_5 ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
