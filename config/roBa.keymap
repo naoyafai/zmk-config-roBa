@@ -95,8 +95,6 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B     &kp LEFT_ARROW       &kp DOWN_ARROW  &kp N      &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mkp MB1  &mkp MB2             &to 2           &kp SPACE                             &kp ENTER
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
